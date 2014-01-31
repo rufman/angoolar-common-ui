@@ -1,6 +1,5 @@
 {
   "name": "angoolar-ui",
-  "version": "0.0.0",
   "authors": [
     "Olen Davis <spelledlikeitsounds@gmail.com>"
   ],
@@ -28,7 +27,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "angoolar-bootstrap": "../angoolar-bootstrap",
-    "angoolar": "../angoolar"
+    "angoolar-bootstrap": "~0.0.0",
+    "angoolar": "~0.0.0"
   }
 }
