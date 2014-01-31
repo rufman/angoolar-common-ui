@@ -1,0 +1,18 @@
+@import "partial/common";
+
+$shelf-button-width  : 1em;
+$shelf-button-padding: .5em;
+
+.shelf {
+	.shelf-left, .shelf-right {
+		width  : $shelf-button-width;
+		padding: $shelf-button-padding;
+	}
+	.shelf-content-container {
+		padding-left : $shelf-button-padding * 2 + $shelf-button-width;
+		padding-right: $shelf-button-padding * 2 + $shelf-button-width;
+	}
+	.shelf-content > * {
+		@include inline-block;
+	}
+}
