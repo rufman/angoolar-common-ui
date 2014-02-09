@@ -1,33 +1,32 @@
 {
-  "name": "angoolar-ui",
-  "authors": [
-    "Olen Davis <spelledlikeitsounds@gmail.com>"
-  ],
-  "description": "This defines common UI components for an AngOOlar project.",
-  "keywords": [
-    "angoolar",
-    "angular",
-    "ui",
-    "components",
-    "component",
-    "dialog",
-    "action",
-    "shelf",
-    "coffeescript",
-    "object",
-    "oriented",
-    "framework",
-    "approach"
-  ],
-  "license": "MIT",
-  "homepage": "http://angoolar.com",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
-  ],
-  "dependencies": {
-    "angoolar-bootstrap": "~0.0.0",
-    "angoolar": "~0.0.0"
-  }
+	"name"       : "angoolar-common-ui",
+	"authors"    : [ "Olen Davis <spelledlikeitsounds@gmail.com>" ],
+	"description": "This defines various common UI components such as Dialog for Angoolar projects.",
+	"keywords"   : [
+		"angoolar",
+		"angular",
+		"common",
+		"ui",
+		"components",
+		"component",
+		"dialog",
+		"action",
+		"shelf",
+		"coffeescript",
+		"object",
+		"oriented",
+		"framework",
+		"approach"
+	],
+	"license" : "MIT",
+	"homepage": "http://angoolar.com",
+	"ignore"  : [
+		"**/.*",
+		"node_modules",
+		"bower_components"
+	],
+	"dependencies": {
+		"angoolar-bootstrap": "~0.0.0",
+		"angoolar": "~0.0.0"
+	}
 }
