@@ -1,6 +1,5 @@
-root = window
 
-class MultiSelectController extends root.BaseDirectiveController
+class MultiSelectController extends angoolar.BaseDirectiveController
 	$_name: 'MultiSelectController'
 
 	constructor: ->
@@ -66,7 +65,7 @@ class MultiSelectController extends root.BaseDirectiveController
 		classes[ @$scope.optionSelectedClass ] = @isSelected option
 		classes
 
-root.MultiSelect = class MultiSelect extends root.BaseTemplatedDirective
+angoolar.MultiSelect = class MultiSelect extends angoolar.BaseTemplatedDirective
 	$_name: 'MultiSelect'
 
 	controller: MultiSelectController
@@ -86,4 +85,4 @@ root.MultiSelect = class MultiSelect extends root.BaseTemplatedDirective
 		optionClass        : 'inline-block less lr-margin'
 		optionSelectedClass: ''
 
-root.addDirective MultiSelect
+angoolar.addDirective MultiSelect

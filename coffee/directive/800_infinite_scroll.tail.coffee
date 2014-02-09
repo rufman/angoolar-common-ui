@@ -1,6 +1,5 @@
-root = window
 
-class InfiniteScroll extends root.BaseDirective
+class InfiniteScroll extends angoolar.BaseDirective
 	$_name: 'InfiniteScroll'
 
 	$_dependencies: [ '$parse', '$log' ]
@@ -56,12 +55,12 @@ class InfiniteScroll extends root.BaseDirective
 	attachEvents: ->
 		@$element   .on 'scroll', @debouncedOnScroll
 		@$element   .on 'resize', @debouncedOnResize
-		root.$window.on 'resize', @debouncedOnResize
+		angoolar.$window.on 'resize', @debouncedOnResize
 
 	detachEvents: =>
 		@$element   .off 'scroll', @debouncedOnScroll
 		@$element   .off 'resize', @debouncedOnResize
-		root.$window.off 'resize', @debouncedOnResize
+		angoolar.$window.off 'resize', @debouncedOnResize
 
 	updateElementHeights: ->
 		@detachEvents()
@@ -119,4 +118,4 @@ class InfiniteScroll extends root.BaseDirective
 			@updateElementHeights()
 			@checkInfiniteScroll()
 
-root.addDirective InfiniteScroll
+angoolar.addDirective InfiniteScroll

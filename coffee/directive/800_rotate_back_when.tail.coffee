@@ -1,6 +1,5 @@
-root = window
 
-class RotateBackWhen extends root.BaseDirective
+class RotateBackWhen extends angoolar.BaseDirective
 	$_name: 'RotateBackWhen'
 
 	rotateBackClass: 'fade-out-rotate-back'
@@ -19,4 +18,4 @@ class RotateBackWhen extends root.BaseDirective
 
 				@$timeout ( => @$element.removeClass @rotateForwardClass ), 600
 
-root.addDirective RotateBackWhen
+angoolar.addDirective RotateBackWhen

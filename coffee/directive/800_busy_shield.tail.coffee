@@ -1,6 +1,5 @@
-root = window
 
-class BusyShield extends root.BaseTemplatedDirective
+class BusyShield extends angoolar.BaseTemplatedDirective
 	$_name: 'BusyShield'
 
 	transclude: yes
@@ -13,4 +12,4 @@ class BusyShield extends root.BaseTemplatedDirective
 	scopeDefaults:
 		spinnerClass: 'big h1 heavy thick secondary'
 
-root.addDirective BusyShield
+angoolar.addDirective BusyShield

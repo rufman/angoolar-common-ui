@@ -1,6 +1,5 @@
-root = window
 
-root.FixedProportionDiv = class FixedProportionDiv extends root.BaseTemplatedDirective
+angoolar.FixedProportionDiv = class FixedProportionDiv extends angoolar.BaseTemplatedDirective
 	$_name: 'FixedProportionDiv'
 
 	transclude: yes
@@ -15,4 +14,4 @@ root.FixedProportionDiv = class FixedProportionDiv extends root.BaseTemplatedDir
 		ratioHeight: 3
 		scrollable : no
 
-root.addDirective FixedProportionDiv
+angoolar.addDirective FixedProportionDiv

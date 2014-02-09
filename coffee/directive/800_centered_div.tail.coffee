@@ -1,9 +1,8 @@
-root = window
 
-class CenteredDivController extends root.BaseDirectiveController
+class CenteredDivController extends angoolar.BaseDirectiveController
 	$_name: 'CenteredDivController'
 
-class CenteredDiv extends root.BaseTemplatedDirective
+class CenteredDiv extends angoolar.BaseTemplatedDirective
 	$_name: 'CenteredDiv'
 
 	controller: CenteredDivController
@@ -15,4 +14,4 @@ class CenteredDiv extends root.BaseTemplatedDirective
 
 	notIsolated: yes
 
-root.addDirective CenteredDiv
+angoolar.addDirective CenteredDiv

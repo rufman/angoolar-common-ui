@@ -1,6 +1,5 @@
-root = window
 
-class FormattedMomentController extends root.BaseDirectiveController
+class FormattedMomentController extends angoolar.BaseDirectiveController
 	$_name: 'FormattedMomentController'
 
 	$_link: ->
@@ -46,7 +45,7 @@ class FormattedMomentController extends root.BaseDirectiveController
 
 	onDatePickerSelect: ( dateText ) => @ngModel.$setViewValue dateText
 
-class FormattedMoment extends root.BaseDirective
+class FormattedMoment extends angoolar.BaseDirective
 	$_name: 'FormattedMoment'
 
 	controller: FormattedMomentController
@@ -59,4 +58,4 @@ class FormattedMoment extends root.BaseDirective
 		afterMoment : '=?'
 		beforeMoment: '=?'
 
-root.addDirective FormattedMoment
+angoolar.addDirective FormattedMoment

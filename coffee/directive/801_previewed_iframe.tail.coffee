@@ -1,6 +1,5 @@
-root = window
 
-class PreviewedIframe extends root.FixedProportionDiv
+class PreviewedIframe extends angoolar.FixedProportionDiv
 	$_name: 'PreviewedIframe'
 
 	transclude: yes
@@ -17,4 +16,4 @@ class PreviewedIframe extends root.FixedProportionDiv
 
 	notIsolated: yes
 		
-root.addDirective PreviewedIframe
+angoolar.addDirective PreviewedIframe

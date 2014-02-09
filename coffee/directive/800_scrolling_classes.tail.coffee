@@ -1,6 +1,5 @@
-root = window
 
-class ScrollingClassesController extends root.BaseDirectiveController
+class ScrollingClassesController extends angoolar.BaseDirectiveController
 	$_name: 'ScrollingClassesController'
 
 	$_dependencies: [ '$parse' ]
@@ -75,9 +74,9 @@ class ScrollingClassesController extends root.BaseDirectiveController
 
 	atBottom: => @scrollTop is ( @scrollHeight - @height )
 
-class ScrollingClasses extends root.BaseDirective
+class ScrollingClasses extends angoolar.BaseDirective
 	$_name: 'ScrollingClasses'
 
 	controller: ScrollingClassesController
 
-root.addDirective ScrollingClasses
+angoolar.addDirective ScrollingClasses

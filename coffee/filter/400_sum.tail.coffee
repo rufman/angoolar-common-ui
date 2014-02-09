@@ -1,6 +1,5 @@
-root = window
 
-class Sum extends root.BaseFilter
+class Sum extends angoolar.BaseFilter
 	$_name: 'Sum'
 
 	filter: ( list, field ) ->
@@ -19,4 +18,4 @@ class Sum extends root.BaseFilter
 		
 		sum
 
-root.addFilter Sum
+angoolar.addFilter Sum

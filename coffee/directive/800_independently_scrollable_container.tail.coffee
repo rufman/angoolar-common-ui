@@ -1,6 +1,5 @@
-root = window
 
-class IndependentlyScrollableContainerController extends root.BaseDirectiveController
+class IndependentlyScrollableContainerController extends angoolar.BaseDirectiveController
 	$_name: 'IndependentlyScrollableContainerController'
 
 	constructor: ->
@@ -12,14 +11,14 @@ class IndependentlyScrollableContainerController extends root.BaseDirectiveContr
 
 	transcludeScrollableContent: ( scrollableTransclude ) ->
 
-class IndependentlyScrollableContainer extends root.BaseDirective
+class IndependentlyScrollableContainer extends angoolar.BaseDirective
 	$_name: 'IndependentlyScrollableContainer'
 
 	# templateUrl: 'independently-scrollable-container.html'
 
 	controller: IndependentlyScrollableContainerController
 
-class ScrollableContent extends root.BaseDirective
+class ScrollableContent extends angoolar.BaseDirective
 	$_name: 'ScrollableContent'
 
 	transclude: 'element'
@@ -31,7 +30,7 @@ class ScrollableContent extends root.BaseDirective
 
 		scope.IndependentlyScrollableContainerController.transcludeScrollableContent @transcludeFn
 
-class NotScrollableContent extends root.BaseDirective
+class NotScrollableContent extends angoolar.BaseDirective
 	$_name: 'NotScrollableContent'
 
 	transclude: 'element'
@@ -43,6 +42,6 @@ class NotScrollableContent extends root.BaseDirective
 
 		scope.IndependentlyScrollableContainerController.transcludeNotScrollableContent @transcludeFn
 
-root.addDirective IndependentlyScrollableContainer
-root.addDirective ScrollableContent
-root.addDirective NotScrollableContent
+angoolar.addDirective IndependentlyScrollableContainer
+angoolar.addDirective ScrollableContent
+angoolar.addDirective NotScrollableContent

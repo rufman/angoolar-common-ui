@@ -1,6 +1,5 @@
-root = window
 
-root.KeyCodes = class KeyCodes extends root.BaseFactory
+angoolar.KeyCodes = class KeyCodes extends angoolar.BaseFactory
 	$_name: 'KeyCodes'
 
 	constructor: ->
@@ -12,4 +11,4 @@ root.KeyCodes = class KeyCodes extends root.BaseFactory
 		@options.push { value: @up     = 38, label: 'Up Arrow' }
 		@options.push { value: @down   = 40, label: 'Down Arrow' }
 
-root.addFactory KeyCodes
+angoolar.addFactory KeyCodes

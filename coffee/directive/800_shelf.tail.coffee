@@ -1,8 +1,7 @@
-root = window
 
 differential = 1
 
-class ShelfController extends root.BaseDirectiveController
+class ShelfController extends angoolar.BaseDirectiveController
 	$_name: 'ShelfController'
 
 	$_dependencies: [ '$timeout', '$rootScope' ]
@@ -24,7 +23,7 @@ class ShelfController extends root.BaseDirectiveController
 			scrollLeft: @scrollWidth - @width
 		), @goToCurrentStep, yes # This means DO do deep equality checking on the return value of the 
 
-		root.$window.resize _.throttle ( => @$scope.$apply @goToCurrentStep ), 500
+		angoolar.$window.resize _.throttle ( => @$scope.$apply @goToCurrentStep ), 500
 
 	getLatestDimensions: ->
 		'scrollWidth': @scrollWidth = @$scrollContainer[ 0 ].scrollWidth
@@ -64,7 +63,7 @@ class ShelfController extends root.BaseDirectiveController
 
 	currentStep: -> @$scope.step or 0
 
-class Shelf extends root.BaseTemplatedDirective
+class Shelf extends angoolar.BaseTemplatedDirective
 	$_name: 'Shelf'
 
 	transclude: yes
@@ -83,4 +82,4 @@ class Shelf extends root.BaseTemplatedDirective
 
 	notIsolated: yes
 
-root.addDirective Shelf
+angoolar.addDirective Shelf

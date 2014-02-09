@@ -1,6 +1,5 @@
-root = window
 
-class Spinner extends root.BaseTemplatedDirective
+class Spinner extends angoolar.BaseTemplatedDirective
 	$_name: 'Spinner'
 
 	transclude: yes
@@ -10,4 +9,4 @@ class Spinner extends root.BaseTemplatedDirective
 
 	notIsolated: yes
 
-root.addDirective Spinner
+angoolar.addDirective Spinner

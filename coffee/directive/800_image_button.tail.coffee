@@ -1,6 +1,5 @@
-root = window
 
-class ImageButton extends root.BaseTemplatedDirective
+class ImageButton extends angoolar.BaseTemplatedDirective
 	$_name: 'ImageButton'
 
 	scope:
@@ -10,4 +9,4 @@ class ImageButton extends root.BaseTemplatedDirective
 		width      : '@'
 		interactive: '@' # will only be interactive if this evaluates to 'true'
 
-root.addDirective ImageButton
+angoolar.addDirective ImageButton

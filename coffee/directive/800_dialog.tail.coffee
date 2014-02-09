@@ -1,9 +1,8 @@
-root = window
 
-class DialogController extends root.BaseDirectiveController
+class DialogController extends angoolar.BaseDirectiveController
 	$_name: 'DialogController'
 
-root.Dialog = class Dialog extends root.BaseTemplatedDirective
+angoolar.Dialog = class Dialog extends angoolar.BaseTemplatedDirective
 	$_name: 'Dialog'
 
 	transclude: yes
@@ -30,4 +29,4 @@ root.Dialog = class Dialog extends root.BaseTemplatedDirective
 
 		scope.$on '$destroy', -> setTimeout -> iElement.remove()
 
-root.addDirective Dialog
+angoolar.addDirective Dialog

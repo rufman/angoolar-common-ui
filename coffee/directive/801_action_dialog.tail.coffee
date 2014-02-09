@@ -1,6 +1,5 @@
-root = window
 
-class ActionDialogController extends root.Dialog::controller
+class ActionDialogController extends angoolar.Dialog::controller
 	$_name: 'ActionDialogController'
 
 	$_dependencies: [ '$q' ]
@@ -29,7 +28,7 @@ class ActionDialogController extends root.Dialog::controller
 			null
 		).finally => @closing = @$scope.shieldShown = no
 
-class ActionDialog extends root.Dialog
+class ActionDialog extends angoolar.Dialog
 	$_name: 'ActionDialog'
 
 	controller: ActionDialogController
@@ -45,4 +44,4 @@ class ActionDialog extends root.Dialog
 		primaryActionText  : 'OK'
 		secondaryActionText: 'Cancel'
 
-root.addDirective ActionDialog
+angoolar.addDirective ActionDialog
