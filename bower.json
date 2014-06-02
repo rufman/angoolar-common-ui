@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "angoolar": "~0.3.0",
-    "angoolar-bootstrap": "~0.2.0",
-    "angoolar-font-awesome": "~0.3.0"
+    "angoolar-font-awesome": "~0.3.0",
+    "angoolar-css-taxonomy": "git://github.com/rufman/angoolar-css-taxonomy#0.0.0"
   }
 }
